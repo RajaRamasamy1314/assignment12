@@ -37,7 +37,19 @@
       </section>
     </div>
     <div>
-      <img class="image" src="image/Slider.jpg" alt="PersonPhoto" />
+      <picture>
+        <source
+          srcset="image/smallone.png"
+          media="(max-width: 200px)"
+          alt="Man face"
+        />
+        <source
+          srcset="image/secongbig.png"
+          media="(max-width: 1200px)"
+          alt="Man face"
+        />
+        <img src="image/bigone.jpg" alt="Man face" />
+      </picture>
     </div>
   </body>
 </html>

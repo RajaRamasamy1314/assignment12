@@ -27,7 +27,7 @@ ul {
   font-size: 20px;
   display: flex;
   list-style: none;
-  padding-right: 80px;
+  padding-right: 50px;
 }
 .linkbuttons ul {
   justify-content: left;
@@ -50,24 +50,35 @@ a {
 }
 img {
   padding-top: 50px;
-  padding-right: 200px;
+  padding-right: 50px;
+  width: 100%;
 }
 .musician {
   font-size: 55px;
 }
-
-@media (max-width: 800px) {
-  .secondpart {
+.linkbuttons li a:hover {
+  color: #ffcc00;
+}
+@media (max-width: 768px) {
+  .firstpart {
     flex-direction: column;
     text-align: center;
-  }
-  .text {
-    max-width: 100%;
-    margin-bottom: 20px;
+    padding: 20px;
   }
   .linkbuttons {
     flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    gap: 1rem;
+  }
+
+  .secondpart {
+    flex-direction: column;
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  picture img {
+    height: 500px;
+    object-fit: cover;
   }
 }
