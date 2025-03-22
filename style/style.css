@@ -1,84 +1,115 @@
 body {
   background-color: black;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: azure;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
 }
+.firstpart {
+  display: flex;
+}
+
 header {
-  padding: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 50px;
 }
-/*nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 50px;
-}
-ul {
-  list-style: none;
-  display: flex;
-}*/
 
 .linkbuttons {
-  font-weight: bold;
-  font-size: 20px;
-  display: flex;
-  list-style: none;
-  padding-right: 50px;
-}
-.linkbuttons ul {
-  justify-content: left;
-  gap: 10%;
   list-style: none;
   display: flex;
+  gap: 30px;
 }
-a {
+
+.linkbuttons a {
   text-decoration: none;
   color: azure;
+  font-size: 18px;
 }
+
 .secondpart {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px;
 }
+
 .text {
   max-width: 50%;
 }
-img {
-  padding-top: 50px;
-  padding-right: 50px;
-  width: 100%;
-}
+
 .musician {
   font-size: 55px;
+}
+
+picture img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 .linkbuttons li a:hover {
   color: #ffcc00;
 }
-@media (max-width: 768px) {
-  .firstpart {
-    flex-direction: column;
+
+@media (max-width: 800px) {
+  header {
     text-align: center;
-    padding: 20px;
   }
+
   .linkbuttons {
-    flex-direction: column;
-    gap: 1rem;
+    gap: 10px;
   }
 
   .secondpart {
+    text-align: center;
+  }
+
+  .text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  picture img {
+    max-width: 300px;
+    padding-left: 50px;
+  }
+  p {
+    text-align: center;
+  }
+  body {
     flex-direction: column;
-    padding: 32px;
   }
 }
+@media (max-width: 1024px) {
+  header {
+    text-align: center;
+  }
 
-@media (min-width: 1200px) {
+  .linkbuttons {
+    gap: 10px;
+  }
+
+  .secondpart {
+    text-align: center;
+  }
+
+  .text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
   picture img {
-    height: 500px;
-    object-fit: cover;
+    max-width: 80%;
+    padding-left: 50px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  body {
+    flex-direction: column;
   }
 }

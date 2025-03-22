@@ -13,13 +13,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="header">
+    <div>
       <header class="firstpart">
         <h1 class="logo">Head.</h1>
-        <nav class="linkbuttons">
-          <ul>
+        <nav>
+          <ul class="linkbuttons">
             <li><a href="#">Works</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Contacts</a></li>
@@ -36,20 +40,18 @@
         </div>
       </section>
     </div>
-    <div>
-      <picture>
-        <source
-          srcset="image/smallone.png"
-          media="(max-width: 200px)"
-          alt="Man face"
-        />
-        <source
-          srcset="image/secongbig.png"
-          media="(max-width: 1200px)"
-          alt="Man face"
-        />
-        <img src="image/bigone.jpg" alt="Man face" />
-      </picture>
-    </div>
+    <picture>
+      <source
+        srcset="image/smallone.png"
+        media="(max-width: 200px)"
+        alt="Man face"
+      />
+      <source
+        srcset="image/secongbig.png"
+        media="(max-width: 1200px)"
+        alt="Man face"
+      />
+      <img src="image/bigone.jpg" alt="Man face" />
+    </picture>
   </body>
 </html>
