@@ -46,7 +46,6 @@ header {
 
 picture img {
   width: 100%;
-  max-width: 500px;
   height: auto;
 }
 .linkbuttons li a:hover {
@@ -72,7 +71,7 @@ picture img {
   }
 
   picture img {
-    max-width: 300px;
+    /* max-width: 300px;*/
     padding-left: 50px;
   }
   p {
@@ -101,12 +100,13 @@ picture img {
   }
 
   picture img {
-    max-width: 80%;
+    /* max-width: 80%;*/
     padding-left: 50px;
   }
 
   p {
     text-align: center;
+    justify-content: space-evenly;
   }
 
   body {
